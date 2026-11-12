@@ -1,0 +1,134 @@
+{
+  "model_name": "LilacLingua-Hybrid-v1.0 (紫语星枢)",
+  "architecture": "16D Unicode Script Profile + 2048D FNV-1a Char/Word N-Gram + 2-Layer MLP (96 Hidden Units) + Cosine Prototype Attention NMT",
+  "supported_languages": {
+    "zh": {
+      "name": "中文 (简体)",
+      "native": "中文",
+      "flag": "🇨🇳",
+      "family": "汉藏语系",
+      "order": "SVO"
+    },
+    "en": {
+      "name": "英语",
+      "native": "English",
+      "flag": "🇺🇸",
+      "family": "印欧语系·日耳曼",
+      "order": "SVO"
+    },
+    "ja": {
+      "name": "日语",
+      "native": "日本語",
+      "flag": "🇯🇵",
+      "family": "日本语系",
+      "order": "SOV"
+    },
+    "ko": {
+      "name": "韩语",
+      "native": "한국어",
+      "flag": "🇰🇷",
+      "family": "朝鲜语系",
+      "order": "SOV"
+    },
+    "fr": {
+      "name": "法语",
+      "native": "Français",
+      "flag": "🇫🇷",
+      "family": "印欧语系·罗曼",
+      "order": "SVO"
+    },
+    "de": {
+      "name": "德语",
+      "native": "Deutsch",
+      "flag": "🇩🇪",
+      "family": "印欧语系·日耳曼",
+      "order": "SVO"
+    },
+    "es": {
+      "name": "西班牙语",
+      "native": "Español",
+      "flag": "🇪🇸",
+      "family": "印欧语系·罗曼",
+      "order": "SVO"
+    },
+    "ru": {
+      "name": "俄语",
+      "native": "Русский",
+      "flag": "🇷🇺",
+      "family": "印欧语系·斯拉夫",
+      "order": "SVO"
+    },
+    "ar": {
+      "name": "阿拉伯语",
+      "native": "العربية",
+      "flag": "🇸🇦",
+      "family": "闪含语系",
+      "order": "VSO"
+    },
+    "pt": {
+      "name": "葡萄牙语",
+      "native": "Português",
+      "flag": "🇵🇹",
+      "family": "印欧语系·罗曼",
+      "order": "SVO"
+    },
+    "it": {
+      "name": "意大利语",
+      "native": "Italiano",
+      "flag": "🇮🇹",
+      "family": "印欧语系·罗曼",
+      "order": "SVO"
+    },
+    "th": {
+      "name": "泰语",
+      "native": "ไทย",
+      "flag": "🇹🇭",
+      "family": "壮侗语系",
+      "order": "SVO"
+    }
+  },
+  "training_samples": 1188,
+  "eval_samples": 96,
+  "eval_accuracy": 1.0,
+  "avg_latency_ms": 1.03,
+  "p95_latency_ms": 2.439,
+  "initial_loss": 2.50515,
+  "final_loss": 0.04985,
+  "loss_curve": [
+    2.50515,
+    0.58235,
+    0.18612,
+    0.16699,
+    0.17255,
+    0.16312,
+    0.14399,
+    0.123,
+    0.1045,
+    0.09006,
+    0.07956,
+    0.07199,
+    0.06626,
+    0.06175,
+    0.05817,
+    0.05533,
+    0.05303,
+    0.05114,
+    0.04985
+  ],
+  "per_lang_accuracy": {
+    "zh": 1.0,
+    "en": 1.0,
+    "ja": 1.0,
+    "ko": 1.0,
+    "fr": 1.0,
+    "de": 1.0,
+    "es": 1.0,
+    "ru": 1.0,
+    "ar": 1.0,
+    "pt": 1.0,
+    "it": 1.0,
+    "th": 1.0
+  },
+  "trained_at": "2026-10-22 13:00:51",
+  "build_duration_sec": 4.62
+}

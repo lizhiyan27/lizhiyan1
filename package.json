@@ -1,0 +1,74 @@
+{
+  "name": "lilaclingua-ai-desktop",
+  "version": "3.2.0",
+  "description": "紫语星枢 LilacLingua AI — 本地 NLLB 神经翻译、视频 / 游戏语音识别、网页与识屏翻译、双语浮窗工作台",
+  "main": "electron/main.js",
+  "author": "LilacLingua AI Lab",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "backend": "runtime\\python\\python.exe -u backend\\server.py --port 52019",
+    "test:backend": "runtime\\python\\python.exe tests\\test_backend.py",
+    "test:ui": "node tests/ui_smoke.js",
+    "build:win": "electron-builder --win portable",
+    "build:dir": "electron-builder --win dir"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "ai.lilaclingua.desktop",
+    "productName": "紫语星枢",
+    "copyright": "Copyright © 2026 LilacLingua AI Lab",
+    "asar": false,
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "icon": "assets/icon.ico",
+    "files": [
+      "electron/**/*",
+      "ui/**/*",
+      "backend/**/*.py",
+      "backend/requirements.txt",
+      "model/**/*",
+      "models/**/*",
+      "assets/icon.ico",
+      "assets/icon.png",
+      "assets/icon-512.png",
+      "assets/logo-256.png",
+      "package.json",
+      "!**/__pycache__/**",
+      "!**/*.pyc",
+      "!tests/**",
+      "!data/**",
+      "!dist/**",
+      "!ui_legacy.html"
+    ],
+    "extraResources": [
+      {
+        "from": "runtime",
+        "to": "runtime",
+        "filter": ["**/*"]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "artifactName": "紫语星枢-${version}-便携版.${ext}",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "portable": {
+      "artifactName": "紫语星枢-${version}-便携版.${ext}",
+      "requestExecutionLevel": "user"
+    }
+  }
+}

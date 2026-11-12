@@ -1,0 +1,34 @@
+# 依赖
+node_modules/
+
+# 内置运行时（可重新分发，体积过大）
+runtime/
+
+# AI 模型权重（体积过大，请单独分发）
+models/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# Windows 快捷方式
+*.lnk
+
+# 环境变量
+.env
+.env.local
+
+# 日志与临时文件
+*.log
+logs/
+temp/
+*.tmp
+
+# 运行时缓存数据库
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# 编辑器配置
+.idea/
+.vscode/
